@@ -1,0 +1,64 @@
+.item {
+  background-color: yellow;
+}
+
+.par {
+  color: green;
+}
+
+.impar {
+  text-transform: uppercase;
+}
+
+h1, h3 {
+  color: red;
+}
+
+h1 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.c-blue {
+  color: blue;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#stackoverflow:hover {
+  color: orange;
+}
+
+#w3schools:hover {
+  color: green;
+}
+
+#mdn:hover {
+  color: black;
+}
+
+#devdocs:hover {
+  color: yellow;
+}
+
+#trybe:hover {
+  color: green;
+}
