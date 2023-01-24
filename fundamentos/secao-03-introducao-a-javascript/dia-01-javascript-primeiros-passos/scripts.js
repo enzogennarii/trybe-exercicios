@@ -1,18 +1,18 @@
 // Assíncrono - Exercício 1
 
-const myName = 'Enzo'
-const birthCity = 'São Paulo'
-let birthYear = 2002
+const myName = 'Enzo';
+const birthCity = 'São Paulo';
+let birthYear = 2002;
 
-console.log(myName, birthCity, birthYear)
+console.log(myName, birthCity, birthYear);
 
-birthYear = 2023
+birthYear = 2023;
 
-console.log(birthYear)
+console.log(birthYear);
 
-birthCity = 'Jundiaí'
+birthCity = 'Jundiaí';
 
-console.log(birthCity)
+console.log(birthCity);
 
 // Alterar valores de variáveis só é possível quando se trata de uma variável let, const não é possível reatribuir valor.
 
@@ -56,13 +56,13 @@ console.log(perimeter);
 const nota = 61;
 
 if (nota >= 80 && nota <= 100) {
-  console.log('Parabéns, você faz parte do grupo das pessoas aprovadas!')
+  console.log('Parabéns, você faz parte do grupo das pessoas aprovadas!');
 } else if (nota < 80 && nota >= 60) {
-  console.log('Você está na nossa lista de espera')
+  console.log('Você está na nossa lista de espera');
 } else if (nota < 60 && nota >= 0) {
-  console.log('Infelizmente, você reprovou.')
+  console.log('Infelizmente, você reprovou.');
 } else {
-  console.log('Não é uma nota válida!')
+  console.log('Não é uma nota válida!');
 }
 
 
@@ -72,19 +72,19 @@ const currentHour = 20;
 let message = '';
 
 if (currentHour >= 22 && currentHour < 24) {
-  message = 'Não deveríamos comer nada, é hora de dormir'
+  message = 'Não deveríamos comer nada, é hora de dormir';
 } else if (currentHour >= 18 && currentHour < 22) {
-  message = 'Rango da noite, vamos jantar :D'
+  message = 'Rango da noite, vamos jantar :D';
 } else if (currentHour >= 14 && currentHour < 18) {
-  message = 'Vamos fazer um bolo pro café da tarde?'
+  message = 'Vamos fazer um bolo pro café da tarde?';
 } else if (currentHour >= 11 && currentHour < 14) {
-  message = 'Hora do almoço!!!'
+  message = 'Hora do almoço!!!';
 } else if (currentHour >= 4 && currentHour < 11) {
-  message = 'Hmmm, cheiro de café recém-passado'
+  message = 'Hmmm, cheiro de café recém-passado';
 } else if (currentHour >= 0 && currentHour < 4) {
-  message = 'Não era melhor estar descansando?'
+  message = 'Não era melhor estar descansando?';
 } else {
-  message = 'Não é um horário válido!'
+  message = 'Não é um horário válido!';
 };
 
 console.log(message);
@@ -97,15 +97,15 @@ let weekDay = 'quarta-feira';
 if (weekDay == 'segunda-feira' || weekDay == 'terça-feira' || weekDay == 'quarta-feira' || weekDay == 'quinta-feira' || weekDay == 'sexta-feira') {
   console.log('Oba, mais um dia de aprendizado na Trybe >:D');
 } else if (weekDay == 'sábado' || weekDay == 'domingo') {
-  console.log('FINALMENTE, descanso merecido UwU')
+  console.log('FINALMENTE, descanso merecido UwU');
 } else {
-  console.log('Não é um dia da semana válido!')
+  console.log('Não é um dia da semana válido!');
 }
 
 
 // Assíncrono - Exercício 7
 
-let statusDaProva = 'reprovado'
+let statusDaProva = 'reprovado';
 let resultado;
 
 switch (statusDaProva) {
@@ -125,4 +125,4 @@ switch (statusDaProva) {
   resultado = 'Informação inválida'; 
 }
 
-console.log(resultado)
+console.log(resultado);
