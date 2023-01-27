@@ -71,7 +71,6 @@ const c = 24;
 // console.log(modulo(a, b));
 
 
-
 function maiorNum(x, y) {
   if (x > y) {
     return x + ' é maior que ' + y;
@@ -100,3 +99,23 @@ function maiorDe3Num(x, y, z) {
   };
 }
 
+function isNegativeOrPositive(x) {
+  if (x > 0) {
+    return 'positive';
+  } else if (x < 0) {
+    return 'negative';
+  } else {
+    return 'zero';
+  };
+}
+
+function isTriangle(x, y, z) {
+  if (x + y + z < 0) {
+    return 'Ângulo inválido!';
+  }
+  else if (x + y + z === 180) {
+    return true;
+  } else {
+    return false;
+  };
+}
