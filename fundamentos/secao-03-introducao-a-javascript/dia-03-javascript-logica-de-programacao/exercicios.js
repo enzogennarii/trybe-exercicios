@@ -136,24 +136,56 @@
 
 
 // Exercício 3
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maiorPalavra = array[0];
-let menorPalavra = array[0];
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let maiorPalavra = array[0];
+// let menorPalavra = array[0];
 
-for (let i = 0; i < array.length; i += 1) {
-  if (maiorPalavra.length < array[i].length) {
-    maiorPalavra = array[i];
-  };
-};
+// for (let i = 0; i < array.length; i += 1) {
+//   if (maiorPalavra.length < array[i].length) {
+//     maiorPalavra = array[i];
+//   };
+// };
 
-for (let i = 0; i < array.length; i += 1) {
-  if (menorPalavra.length > array[i].length) {
-    menorPalavra = array[i];
-  };
-};
+// for (let i = 0; i < array.length; i += 1) {
+//   if (menorPalavra.length > array[i].length) {
+//     menorPalavra = array[i];
+//   };
+// };
 
-console.log(maiorPalavra);
-console.log(menorPalavra);
+// console.log(maiorPalavra);
+// console.log(menorPalavra);
 
 
-// Exercício 4
+// Exercícios Bônus
+
+// Exercício 1
+// let n = 5;
+// let simbolo = '*';
+// let quadrado = '';
+
+// for (let i = 1; i <= n; i += 1) {
+//   quadrado += simbolo;
+// };
+// for (let i = 1; i <= n; i += 1) {
+//   console.log(quadrado);
+// };
+
+// Exercício 2
+// let n = 5;
+// let simbolo = '*';
+// let quadrado = '';
+
+// for (let i = 1; i <= n; i += 1) {
+//   quadrado += simbolo;
+//   console.log(quadrado);
+// };
+
+// Exercício 3
+// let n = 5;
+// let simbolo = '*';
+// let quadrado = '';
+
+// for (let i = 1; i <= n; i += 1) {
+//   quadrado += simbolo;
+//   console.log(quadrado);
+// };
