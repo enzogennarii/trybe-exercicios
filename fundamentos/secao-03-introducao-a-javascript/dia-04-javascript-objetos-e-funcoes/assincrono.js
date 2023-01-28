@@ -28,7 +28,7 @@
 
 // for (let i in names) {
 //   console.log('Olá ' + names[i]);
-// ;}
+// };
 
 
 // let car = {
@@ -50,23 +50,23 @@ const c = 24;
 
 // function soma(a, b) {
 //   return a + b;
-// }
+// };
 
 // function subtrai(a, b) {
 //   return a - b;
-// }
+// };
 
 // function multiplica(a, b) {
 //   return a * b;
-// }
+// };
 
 // function divide(a, b) {
 //   return a / b;
-// }
+// };
 
 // function modulo(a, b) {
 //   return a % b;
-// }
+// };
 
 // console.log(modulo(a, b));
 
@@ -79,7 +79,7 @@ function maiorNum(x, y) {
   } else {
     return 'Os dois números são iguais';
   };
-}
+};
 
 function maiorDe3Num(x, y, z) {
   if (x > y && x > z) {
@@ -97,7 +97,7 @@ function maiorDe3Num(x, y, z) {
   } else {
     return 'Erro inesperado!';
   };
-}
+};
 
 function isNegativeOrPositive(x) {
   if (x > 0) {
@@ -107,7 +107,7 @@ function isNegativeOrPositive(x) {
   } else {
     return 'zero';
   };
-}
+};
 
 function isTriangle(x, y, z) {
   if (x + y + z < 0) {
@@ -118,4 +118,4 @@ function isTriangle(x, y, z) {
   } else {
     return false;
   };
-}
+};
