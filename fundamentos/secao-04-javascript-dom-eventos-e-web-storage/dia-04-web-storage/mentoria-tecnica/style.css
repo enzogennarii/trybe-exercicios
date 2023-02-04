@@ -1,0 +1,11 @@
+input[type="text" i] {
+  padding: 10px;
+}
+
+.send {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+}
