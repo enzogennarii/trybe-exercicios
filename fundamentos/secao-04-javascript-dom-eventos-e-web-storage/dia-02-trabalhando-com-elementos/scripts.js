@@ -3,16 +3,19 @@
 const elementoOndeEsta = document.getElementById('elementoOndeVoceEsta');
 
 const paiDoElementoOndeEsta = elementoOndeEsta.parentNode;
-paiDoElementoOndeEsta.style.color = 'purple';
+paiDoElementoOndeEsta.style.color = 'red';
 
 const fstFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho').innerText = 'Primeiro Filho do Filho';
 
 const fstFilhoDePai = document.getElementById('pai').firstElementChild;
 fstFilhoDePai.innerText = 'Primeiro Filho do Pai';
 
-const fstFilhoDeElementoOndeEsta = elementoOndeEsta.previousSibling;
-fstFilhoDeElementoOndeEsta.innerText = 'Primeiro Filho, vindo do elementoOndeVoceEsta';
+const fstFilhoDeOndeEsta = elementoOndeEsta.previousElementSibling;
 
+const atencaoDeOndeEsta = elementoOndeEsta.nextSibling;
 
+const trdFilhoDeOndeEsta = elementoOndeEsta.nextElementSibling;
+trdFilhoDeOndeEsta.innerText = 'Terceiro Filho - Elemento de onde está';
 
-
+const trdFilhoDePai = paiDoElementoOndeEsta.children[2];
+trdFilhoDePai.innerText = 'Terceiro Filho de pai';
