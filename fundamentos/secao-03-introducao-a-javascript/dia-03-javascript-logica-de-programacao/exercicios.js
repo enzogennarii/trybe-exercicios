@@ -171,21 +171,3 @@
 // };
 
 // Exercício 2
-// let n = 5;
-// let simbolo = '*';
-// let quadrado = '';
-
-// for (let i = 1; i <= n; i += 1) {
-//   quadrado += simbolo;
-//   console.log(quadrado);
-// };
-
-// Exercício 3
-// let n = 5;
-// let simbolo = '*';
-// let quadrado = '';
-
-// for (let i = 1; i <= n; i += 1) {
-//   quadrado += simbolo;
-//   console.log(quadrado);
-// };
