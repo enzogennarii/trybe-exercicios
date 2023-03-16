@@ -1,0 +1,17 @@
+{
+  "name": "dia-01-introducao-ao-front-end-e-javascript-assincrono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nanoid": "^4.0.1",
+    "vite": "^4.2.0"
+  },
+  "type": "module"
+}

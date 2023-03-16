@@ -1,0 +1,19 @@
+{
+  "name": "exercicios-dia-1.1-de-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
+    "validator": "^13.9.0",
+    "vite": "^4.2.0"
+  },
+  "type": "module"
+}
