@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px 12px;
+  width: fit-content;
+}
+
+.furia {
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.furia-inverted {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-weight: 700;
+}
+
+.imperial {
+  background-color: rgb(99, 146, 27);
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.imperial-inverted {
+  background-color: white;
+  border: 2px solid rgb(99, 146, 27);
+  color: rgb(99, 146, 27);
+  font-weight: 700;
+}
+
+.pain {
+  border: none;
+  background-color: rgb(196, 29, 29);
+  color: white;
+  font-weight: 700;
+}
+
+.pain-inverted {
+  background-color: white;
+  border: 2px solid rgb(196, 29, 29);
+  color: rgb(196, 29, 29);
+  font-weight: 700;
+}
