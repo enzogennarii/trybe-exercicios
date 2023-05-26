@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      height: 50px;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>Color: <span id="value">white</span></p>
+    <button id="previous">Previous color</button>
+    <button id="next">Next color</button>
+    <button id="random">Random</button>
+  </div>
+
+  <script>
+    const INITIAL_STATE = {
+      colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+      index: 0,
+    };
+
+    const reducer = (state = INITIAL_STATE, { type }) => {
+      switch (type) {
+        case 'PREVIOUS_COLOR':
+          return state.index === 0 ? state : { ...state, index: state.index - 1 };
+        case 'NEXT_COLOR':
+          return state.index === (state.colors.length - 1) ? state : { ...state, index: state.index + 1 };
+        case 'RANDOM_COLOR':
+          return { ...state, index: Math.round(Math.random() * 5) }
+        default:
+          return state;
+      }
+    };
+
+    const store = Redux.createStore(reducer);
+
+    const prevColorBtn = document.getElementById('previous');
+    prevColorBtn.addEventListener('click', () => {
+      store.dispatch({ type: 'PREVIOUS_COLOR' });
+    });
+
+    const nextColorBtn = document.getElementById('next');
+    nextColorBtn.addEventListener('click', () => {
+      store.dispatch({ type: 'NEXT_COLOR' });
+    });
+
+    const randomColorBtn = document.getElementById('random');
+    randomColorBtn.addEventListener('click', () => {
+      store.dispatch({ type: 'RANDOM_COLOR' });
+    });
+
+    store.subscribe(() => {
+      const { colors, index } = store.getState();
+      const colorElement = document.getElementById('value');
+      colorElement.innerHTML = `${colors[index]}`;
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "dia-03-casa-de-cambio",
+  "version": "1.0.0",
+  "description": "Exercício prático - Casa de Câmbio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "keywords": [],
+  "author": "Enzo Gennari",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
