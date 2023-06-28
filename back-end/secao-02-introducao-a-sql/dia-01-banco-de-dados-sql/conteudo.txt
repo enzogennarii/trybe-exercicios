@@ -1,0 +1,47 @@
+## Tipos de bancos de dados
+Banco de dados relacionais:
+Armazenam os dados em tabelas de linhas e colunas com estrutura pré-definida e sem alterações dinâmicas (linguagem SQL).
+Isso cria previsibilidade e a possibilidade de criar relações entre as tabelas.
+
+Banco de dados não relacionais:
+Podem também usar estrutura pré-definida, mas não obrigatóriamente. Os dados podem ser alterados dinâmicamente sem alterar a estrutura do banco de dados.
+Não tem uma linguaguem fixa.
+
+
+## O que é SQL?
+SQL (Structured Query Language) é a linguagem mais usada para criar, pesquisar, extrair e também manipular dados dentro de um banco de dados relacional. Para que isso seja possível, existem comandos como o SELECT, UPDATE, DELETE, INSERT, WHERE e outros.
+
+
+## Alguns comandos SQL
+*Por convenção, usa-se capslock nas palavras chave dos comandos SQL.
+*Para que os comandos SQL funcionem, sempre deve haver ponto e vírgula ao final de cada comando.
+
+Para listar todos os bancos de dados presentes na sua máquina:
+SHOW DATABASES;
+
+Para referênciar o banco de dados que será utilizado na query:
+USE <banco-de-dados>
+
+Para retornar todas as tabelas inicializadas no seu server:
+SHOW TABLES;
+
+Para visualizar a estrutura de uma tabela (colunas):
+DESCRIBE <nome-da-tabela>;
+
+Para criar um novo banco de dados:
+CREATE DATABASE <nome-do-novo-banco-de-dados>;
+
+Para criar uma nova tabela dentro de um banco de dados:
+CREATE TABLE <nome-da-tabela> (argumentos);
+
+
+## Constraints (Restrições de dados)
+NOT NULL (NN) => Garante que aquele campo não pode conter valores nulos, ou seja, se não houver um valor padrão definido, será sempre necessário passar um valor para esse campo durante a inserção ou alteração de dados.
+
+UNIQUE (UQ) => Garante que o valor inserido na coluna da tabela seja único, isto é, não pode haver outro valor igual para esta coluna registrado nesta tabela.
+
+PRIMARY KEY (PK) => Garante que o valor seja a chave primária da tabela, ou seja, que a coluna que possui essa constraint aplicada seja o identificador único da tabela. Ela também é, por definição, não nula (mesmo efeito da constraint NOT NULL) e única (mesmo efeito da constraint UNIQUE).
+
+FOREIGN KEY => Garante que o valor seja uma chave estrangeira da tabela, ou seja, faça referência à PRIMARY KEY de outra tabela, permitindo um relacionamento entre tabelas.
+
+DEFAULT => Garante que, caso nenhum valor seja inserido na coluna (ou um valor nulo), a constraint colocará o valor padrão passado para ela.

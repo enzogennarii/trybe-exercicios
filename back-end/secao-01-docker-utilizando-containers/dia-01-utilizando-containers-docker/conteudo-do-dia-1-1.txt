@@ -1,0 +1,107 @@
+O conteúdo do dia foi estudar e praticar um pouco os comandos Docker, mexendo com imagens do Docker Hub e criando e fazendo alterações em containers.
+
+#Alguns dos comandos:
+docker version
+Para verificar a versão do Docker
+
+## Comandos de criação:
+docker pull <imagem>:<tag>
+Para baixar uma imagem sem executar
+
+docker create
+Cria um container sem executar
+
+docker create <nome-da-imagem>
+Cria um container baseado em uma imagem sem executar
+
+docker run <nome-da-imagem>
+Cria e roda um container baseado em uma imagem
+
+--name <nome-do-container>
+Flag para nomear o novo container
+
+-it
+Flag para rodar o container com um terminal interativo
+
+-p <porta-local>:<porta-do-container>
+Flag para definir uma porta virtual
+
+-d
+Flag para rodar o container em segundo plano
+
+## Comandos de execução:
+docker start <nome-ou-id-do-container>
+Inicia a execução de um container já criando
+
+docker stop <nome-ou-id-do-container>
+Interrompe a execução de um container que está rodando
+
+docker pause <nome-ou-id-do-container>
+Pausa a execução dos processos do container
+
+docker restart <nome-ou-id-do-container>
+Reinicia a execução do container parado
+
+docker exec -it <nome-ou-id-do-container> <bash-ou-sh>
+Executa comandos no terminal de um container em execução
+
+-f
+Flag para forçar interrupção ou remoção até mesmo de containers que estão sendo executados
+
+## Comandos de remoção:
+docker rm $(docker ps -aq)
+Remove todos os containers
+
+docker rmi <nome-ou-id-da-imagem>
+Remove uma ou mais imagens
+
+docker system prune -af
+Remove todas as imagens e containers
+
+docker image prune
+Remove todas as imagens
+
+docker image prune -a
+Remove todas as imagens que não estão sendo utilizadas
+
+docker container prune
+Remove todos os containers que não estão em execução
+
+docker rm <nome-ou-id-do-container>
+Remove um container
+
+## Comandos de contrução de imagem:
+docker build -t <nome-da-imagem> <contexto-do-dockerfile>
+Cria uma imagem baseada em um Dockerfile
+
+## Comandos de nome:
+docker rename <antigo-nome> <novo-nome>
+Renomeia um container
+
+## Comandos de visualização:
+docker inspect <nome-ou-id-do-container>
+Exibe as informações de um container
+
+docker ps -l
+Exibe o último container criado
+
+docker ps
+Exibe todos os containers em execução
+
+docker ps -a
+Exibe todos os containers existentes
+
+docker history <nome-ou-id-da-imagem>
+Exibe o histórico de uma imagem
+
+docker images
+Exibe todas as imagens existentes localmente
+
+docker ps -f name=<nome-ou-id-do-container>
+Exibe o status do container filtrado pelo nome ou id
+
+docker logs <nome-ou-id-de-container>
+Exibe os logs de um container
+
+--help
+Flag para exibir uma página de ajuda com todos os comandos e suas funções

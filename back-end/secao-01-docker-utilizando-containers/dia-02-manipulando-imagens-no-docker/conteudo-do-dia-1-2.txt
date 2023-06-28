@@ -1,0 +1,31 @@
+O conteúdo do dia foi focado em entender o funcionamento e alguns dos comandos do Dockerfile, para a criação de novas imagens.
+
+Alguns dos comandos:
+
+## Herança:
+FROM <imagem>:<tag>
+Para usar uma imagem como base para o estágio
+
+## Variáveis:
+RUN <argumentos>
+Para executar comandos durante o processo de build
+
+## Inicialização:
+WORKDIR <diretorio>
+Para indicar qual o diretório de trabalho atual da imagem
+
+ADD <arquivo> <destino>
+
+COPY <arquivo> <destino>
+Para copiar um arquivo local para um destino dentro da imagem
+
+## Comandos:
+CMD <argumentos>
+Para executar comandos ao executar o container, caso não seja passado parâmetros no comando de build
+
+EXPOSE <porta>
+Para indicar o número da porta do container
+
+## Ponto de entrada:
+ENTRYPOINT <argumentos>
+Para indicar quais comandos DEVEM ser executados ao iniciar o container
