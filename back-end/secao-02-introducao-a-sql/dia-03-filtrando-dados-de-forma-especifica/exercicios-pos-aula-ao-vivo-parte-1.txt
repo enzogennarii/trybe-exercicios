@@ -1,4 +1,4 @@
-Exercícios pós aula ao vivo:
+Exercícios pós aula ao vivo - Parte 1:
 
 Para realizar as tarefas do 1 ao 7, restaure o seguinte banco de dados:
 
