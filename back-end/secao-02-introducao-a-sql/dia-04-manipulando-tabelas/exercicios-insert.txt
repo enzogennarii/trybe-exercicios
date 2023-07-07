@@ -13,7 +13,7 @@ INSERT INTO sakila.staff
     (first_name, last_name, address_id, email, store_id, active, username, password)
 VALUES
     ('John', 'Marston', 2, 'johnmarston@gmail.com', 1, 1, 'Jonh', 'abigail'),
-    ('Dutch', 'Van Derline', 2, 'dutchvanderline@gmail.com', 1, 1, 'Dutch', 'iamaasshole');
+    ('Dutch', 'Van Der Linde', 2, 'dutchvanderlinde@gmail.com', 1, 1, 'Dutch', 'iamaasshole');
 
 3- Selecione os cinco primeiros nomes e sobrenomes da tabela sakila.customer e cadastre essas pessoas como atores na tabela sakila.actor.
 SOLUÇÃO:
