@@ -1,0 +1,19 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "bmi": "node src/bmi/index.js",
+    "simpsons": "node src/simpsons/index.js",
+    "fibonacci": "node src/exercicios-bonus/fibonacci.js",
+    "ultimoex": "node src/exercicios-bonus/ultimoex.js"
+  },
+  "author": "Enzo Gennari",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "cacau-trybe",
+  "version": "1.0.0",
+  "description": "Repositório para exercícios de testes de integração com Mocha",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "mocha tests/**/*test.js --exit",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "Enzo Gennari",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "chai-http": "4.3.0",
+    "mocha": "8.4.0",
+    "nodemon": "^3.0.1",
+    "sinon": "11.1.1"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}

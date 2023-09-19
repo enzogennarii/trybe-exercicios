@@ -1,0 +1,19 @@
+{
+  "name": "conteudo_backend_4.4",
+  "version": "1.0.0",
+  "description": "Exercícios do conteúdo pré aula ao vivo do dia 4.4 de BackEnd",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.1"
+  }
+}
