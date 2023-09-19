@@ -1,0 +1,54 @@
+Exercícios pós aula ao vivo - Parte 1
+
+Exercício 1: 🚀 Um zoológico precisa de um banco de dados para armazenar informações sobre os seus animais. As informações a serem armazenadas sobre cada animal são:
+- Nome;
+- Espécie;
+- Sexo;
+- Idade;
+- Localização.
+* Cada animal também possui vários cuidadores, e cada cuidador pode ser responsável por mais de um animal. Além disso, cada cuidador possui um gerente, sendo que cada gerente pode ser responsável por mais de um cuidador.
+
+SOLUÇÃO:
+-- Remove o banco, caso já exista
+DROP DATABASE IF EXISTS zoologico;
+-- Cria o banco
+CREATE DATABASE zoologico;
+-- Utiliza o banco
+USE zoologico;
+
+-- Cria a tabela de animais
+CREATE TABLE animais (
+    animal_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    especie VARCHAR(50) NOT NULL,
+    sexo VARCHAR(50) NOT NULL,
+    idade INT NOT NULL,
+    localizacao VARCHAR(50) NOT NULL
+);
+
+-- Cria a tabela de gerentes
+CREATE TABLE gerentes (
+    gerente_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL
+);
+
+-- Cria a tabela de cuidadores, com a chave estrangeira que representa qual o gerente responsável por cada um deles
+CREATE TABLE cuidadores (
+    cuidador_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    gerente_id INT NOT NULL,
+    FOREIGN KEY (gerente_id) REFERENCES gerentes (gerente_id)
+);
+
+-- Cria a tabela intermediária de relacionamento entre animais e cuidadores
+CREATE TABLE animal_cuidador (
+    animal_id INT NOT NULL,
+    cuidador_id INT NOT NULL,
+    CONSTRAINT PRIMARY KEY (animal_id, cuidador_id),
+    FOREIGN KEY (animal_id)
+        REFERENCES animais (animal_id)
+    FOREIGN KEY (cuidador_id)
+        REFERENCES cuidadores (cuidador_id),
+);

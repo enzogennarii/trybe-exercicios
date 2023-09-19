@@ -1,0 +1,8 @@
+Exercícios - SELF JOIN
+
+1- Queremos saber o Nome das pessoas colaboradoras e suas respectivas gerências (manager) cujos departamentos (department) são diferentes.
+SOLUÇÃO:
+
+2- Exiba o Nome e a quantidade de pessoas lideradas de cada pessoa gerente.
+SOLUÇÃO:
+
