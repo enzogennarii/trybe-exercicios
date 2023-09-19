@@ -1,0 +1,24 @@
+{
+  "name": "dia-02-heranca-e-composicao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ex:heranca": "ts-node ./conteudo/heranca.ts",
+    "ex:interface": "ts-node ./conteudo/interfaces.ts",
+    "ex:comp-e-agreg": "ts-node ./conteudo/composicao-e-agregacao.ts",
+    "ex:pos-aula": "npx tsc -t es5 ./exercicios/index.ts && node ./exercicios/index.js",
+    "ex:pos-aula1": "ts-node ./exercicios/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^20.6.2",
+    "@types/typescript": "^2.0.0",
+    "crypto-random-string": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

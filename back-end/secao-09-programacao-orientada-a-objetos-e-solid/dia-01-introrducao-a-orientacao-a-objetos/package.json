@@ -1,0 +1,18 @@
+{
+  "name": "dia-01-introrducao-a-orientacao-a-objetos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ex:1": "npx ts-node ./conteudo/sintaxe-encapsulamento.ts",
+    "ex:2": "npx ts-node ./conteudo/resolucao-do-problema-inicial.ts",
+    "ex:3": "npx ts-node ./exercicios/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
